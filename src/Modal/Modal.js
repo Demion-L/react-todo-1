@@ -8,7 +8,18 @@ export default class Modal extends React.Component {
 
     render() {
         return (
-            <button>qw</button>
+            <React.Fragment>
+                <button onClick={() => this.setState({isOpen: true})}>New to-do</button>
+
+                {this.state.isOpen && (
+                    <div className='modal'>
+                        <div className='modal-body'>
+                            <h1>Modal title</h1>
+                            <input type='text'/>
+                            <button onClick={() => this.setState({isOpen: false})}>Close modal</button>
+                        </div>
+                    </div>)}
+            </React.Fragment>
                 )
     }
 
