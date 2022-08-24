@@ -11,3 +11,72 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.wrapper {
+  padding: 5rem;
+  margin: 2rem auto;
+  width: 600px;
+  -webkit-box-shadow: .1rem .1rem .6rem 1rem rgba(0, 0, 0, 0.5);
+  -moz-box-shadow:  .1rem .1rem .6rem 1rem rgba(0, 0, 0, 0.5);
+  box-shadow:  .1rem .1rem .6rem 1rem rgba(0, 0, 0, 0.5);
+  -webkit-border-radius: 1rem;
+  -moz-border-radius: 1rem;
+  border-radius: 1rem;
+}
+
+.todo-header {
+  margin-left: 25%;
+}
+
+
+.list-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: .5rem 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-bottom: .5rem;
+}
+
+.todo-input {
+  margin-right: 1rem;
+}
+
+.btn {
+  background: red;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  color: #fff;
+  border: none;
+}
+
+.done {
+    text-decoration: line-through;
+}
+
+.lds-dual-ring {
+  display: inline-block;
+  width: 80px;
+  height: 80px;
+}
+.lds-dual-ring:after {
+  content: " ";
+  display: block;
+  width: 64px;
+  height: 64px;
+  margin: 8px;
+  border-radius: 50%;
+  border: 6px solid indianred;
+  border-color: indianred transparent indianred transparent;
+  animation: lds-dual-ring 1.2s linear infinite;
+}
+@keyframes lds-dual-ring {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
