@@ -19,6 +19,7 @@ export default class Modal extends React.Component {
                             <button onClick={() => this.setState({isOpen: false})}>Close modal</button>
                         </div>
                     </div>)}
+
             </React.Fragment>
                 )
     }
